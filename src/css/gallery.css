@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 4;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+  padding: 0 12px;
+}
+
+.gallery .pics {
+  transition: all 350ms ease;
+  cursor: pointer;
+  -webkit-transition: all 350ms ease;
+  margin-bottom: 12px;
+}
+
+.painting-heading {
+  font-family: 'Anton', sans-serif;
+}
+
+@media (max-width: 991px) {
+  .gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+.gallery .pics:hover {
+  filter: opacity(0.9);
+}
+
+.model {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  transition: opacity 0.4s ease, visibility 0.4s ease,
+    transform 0.5s ease-in-out;
+  background-color: #000000;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: 999;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.model.open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1.25);
+}
+
+.model > p {
+  position: relative;
+  bottom: 35%;
+}
+
+@media (max-width: 780px) {
+  .model.open {
+    transform: scale(1);
+  }
+  .model > img {
+    width: 90%;
+  }
+  .model > p {
+    bottom: 35%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .model {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body,
+html {
+  overflow-x: hidden;
+
+  scrollbar-width: none;
+  font-family: 'Abril Fatface', cursive;
+}
+
+-webkit-scrollbar {
+  display: none;
+}

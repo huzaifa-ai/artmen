@@ -77,11 +77,11 @@ function Neoclassicism() {
           Setmodel(false);
         }}
       >
-        <img src={tempImg} alt="" className="drop-shadow-sm" />
-        <div>
+        <img src={tempImg} alt="" className="drop-shadow-sm p-4 max-w-sm" />
+        <div className="max-w-xs">
           <h1 className="text-white md:text-3xl">{title}</h1>
           <h2 className="text-white text-sm mt-2 tracking-wider">
-            Author: {''} {author}
+            Artist: {''} {author}
           </h2>
         </div>
       </div>

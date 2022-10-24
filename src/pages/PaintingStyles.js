@@ -4,12 +4,20 @@ import Neoclassicism from '../components/Neoclassicism';
 import Mannerism from '../components/Mannerism';
 import '../css/gallery.css';
 import Romanticism from '../components/Romanticism';
+import Realism from '../components/Realism';
+import Impressionism from '../components/Impressionism';
+import Symbolism from '../components/Symbolism';
+import Expressionism from '../components/Expressionism';
+import Cubism from '../components/Cubism';
+import Constructivism from '../components/Constructivism';
+import Futurism from '../components/Futurism';
+import Abstract from '../components/Abstract';
 
 function PaintingStyles() {
   return (
-    <div className="painting pt-20 ">
-      <div className="bg-white h-screen">
-        <h1 className="text-4xl text-center mb-12 tracking-widest painting-heading">
+    <div className="painting pt-16 ">
+      <div className=" ">
+        <h1 className="text-7xl text-center mb-12 tracking-widest painting-heading ">
           Painting Styles
         </h1>
         {/* Resnaissance art */}
@@ -30,7 +38,9 @@ function PaintingStyles() {
         {/* NeoClassicism art */}
         <div className="px-12 mt-12">
           <div className="bg-gray-900 tracking-widest text-gray-200 p-6 flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-20 ">
-            <h1 className=" font-bold text-lg md:text-2xl ">RENAISSANCE ART</h1>
+            <h1 className=" font-bold text-lg md:text-2xl ">
+              NEOCLASSICISM ART
+            </h1>
             <p className="text-sm md:text-lg">
               "The same truth that guides the pen of the historian should govern
               the pencil of the artist. The artist must be a philosopher and
@@ -73,6 +83,141 @@ function PaintingStyles() {
           </div>
           <div className="mt-10">
             <Romanticism />
+          </div>
+        </div>
+        {/* Realism art */}
+        <div className="px-12 mt-12">
+          <div className="bg-gray-900 tracking-widest text-gray-200 p-6 flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-20 ">
+            <h1 className=" font-bold text-lg md:text-2xl ">Realism ART</h1>
+            <p className="text-sm md:text-lg">
+              "It is not a question, here, of searching for an ‘absolute’ of
+              beauty. The artist is neither painting history or his soul… And it
+              is because of this that he should neither be judged as a moralist
+              nor as a literary man. He should be judged simply as a painter.
+              Painting is the representation of visible forms.”
+            </p>
+          </div>
+          <div className="mt-10">
+            <Realism />
+          </div>
+        </div>
+        {/* Impressionism art */}
+        <div className="px-12 mt-12">
+          <div className="bg-gray-900 tracking-widest text-gray-200 p-6 flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-20 ">
+            <h1 className=" font-bold text-lg md:text-2xl ">
+              Impressionism ART
+            </h1>
+            <p className="text-sm md:text-lg">
+              "It is not a question, here, of searching for an ‘absolute’ of
+              beauty. The artist is neither painting history or his soul… And it
+              is because of this that he should neither be judged as a moralist
+              nor as a literary man. He should be judged simply as a painter.
+              Painting is the representation of visible forms.”
+            </p>
+          </div>
+          <div className="mt-10">
+            <Impressionism />
+          </div>
+        </div>
+        {/* Symbolism art */}
+        <div className="px-12 mt-12">
+          <div className="bg-gray-900 tracking-widest text-gray-200 p-6 flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-20 ">
+            <h1 className=" font-bold text-lg md:text-2xl ">Symbolism ART</h1>
+            <p className="text-sm md:text-lg">
+              "In this art, scenes from nature, human activities, and all other
+              real-world phenomenon will not be described for their own sake;
+              here, perceptible surfaces created to represent their esoteric
+              affinities with the primordial ideals. The logic of the visible
+              world at the service of the invisible.”
+            </p>
+          </div>
+          <div className="mt-10">
+            <Symbolism />
+          </div>
+        </div>
+        {/* Expressionism  art */}
+        <div className="px-12 mt-12">
+          <div className="bg-gray-900 tracking-widest text-gray-200 p-6 flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-20 ">
+            <h1 className=" font-bold text-lg md:text-2xl ">
+              Expressionism ART
+            </h1>
+            <p className="text-sm md:text-lg">
+              "Art is nothing but the expression of our dream; the more we
+              surrender to it the more get to the inner truth of things, our
+              dreamlife, the truth life that scorns questions and doesn’t see
+              them. True dreams and visions should be as visible to the artist
+              as phenomenon of the objective.”
+            </p>
+          </div>
+          <div className="mt-10">
+            <Expressionism />
+          </div>
+        </div>
+        {/* Cubism  art */}
+        <div className="px-12 mt-12">
+          <div className="bg-gray-900 tracking-widest text-gray-200 p-6 flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-20 ">
+            <h1 className=" font-bold text-lg md:text-2xl ">Cubism ART</h1>
+            <p className="text-sm md:text-lg">
+              "Cubism was an attack on the perspective that had been known and
+              used for 500 years. It was the first big, big change. It confused
+              people: they said, “things don't look like that!” Cubism is like
+              standing at a certain point on a mountain and looking around. If
+              you go higher, things will look different; if you go lower, again
+              they will look different. T is a point of view”
+            </p>
+          </div>
+          <div className="mt-10">
+            <Cubism />
+          </div>
+        </div>
+        {/* Constructivism  art */}
+        <div className="px-12 mt-12">
+          <div className="bg-gray-900 tracking-widest text-gray-200 p-6 flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-20 ">
+            <h1 className=" font-bold text-lg md:text-2xl ">
+              Constructivism ART
+            </h1>
+            <p className="text-sm md:text-lg">
+              "Art must not be concentrated in dead shrines called museums. It
+              must be spread everywhere - on the streets, in the trams,
+              factories, workshops, and in the worker's home”
+            </p>
+          </div>
+          <div className="mt-10">
+            <Constructivism />
+          </div>
+        </div>
+        {/* Futurism  art */}
+        <div className="px-12 mt-12">
+          <div className="bg-gray-900 tracking-widest text-gray-200 p-6 flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-20 ">
+            <h1 className=" font-bold text-lg md:text-2xl ">Futurism ART</h1>
+            <p className="text-sm md:text-lg">
+              "The gesture which we would reproduce on canvas shall no longer be
+              a fixed moment in universal dynamism. It shall be the dynamic
+              sensation itself. Indeed, all things move, all things run, all
+              things are rapidly changing… We would at any price re-enter into
+              life”
+            </p>
+          </div>
+          <div className="mt-10">
+            <Futurism />
+          </div>
+        </div>
+        {/* Abstract  art */}
+        <div className="px-12 mt-12">
+          <div className="bg-gray-900 tracking-widest text-gray-200 p-6 flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-20 ">
+            <h1 className=" font-bold text-lg md:text-2xl ">
+              Abstract Expressionism ART
+            </h1>
+            <p className="text-sm md:text-lg">
+              "Every so often, a painter has to destroy painting. Cezanne did
+              it, Picasso did it with Cubism. Then Pollock did it. He busted our
+              idea of a picture all to hell. To us, art is an adventure int an
+              unknown world of the imaginations, which is fancy-free and
+              violently opposed to common sense”
+            </p>
+          </div>
+          <div className="mt-10">
+            <Abstract />
           </div>
         </div>
       </div>

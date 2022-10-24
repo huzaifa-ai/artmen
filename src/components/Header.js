@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/Header.css';
 import logo from '../images/logo.png';
 import moon from '../images/moon.png';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -21,7 +22,7 @@ function Header() {
       </div>
       <hr /> */}
       {/* Below Section */}
-      <div className="absolute text-white">hello</div>
+
       <div className="flex text-white items-center space-x-52">
         <div className="pt-48 flex space-x-6 items-center w-1/2 md:space-x-16">
           <div className="flex flex-col items-center">
@@ -40,15 +41,21 @@ function Header() {
       </div>
       {/* Buttons section */}
       <div className=" mt-20 flex flex-col py-36 text-center px-2 text-white lg:flex-row lg:justify-center">
-        <div className="text-xl tracking-widest uppercase border py-8 lg:px-16 xl:px-48 hover:bg-gray-800 cursor-pointer ease-in-out duration-300 ">
-          PAINTING STYLES
-        </div>
-        <div className="text-xl tracking-widest uppercase border py-8 lg:px-16 xl:px-48 hover:bg-gray-800 cursor-pointer ease-in-out duration-300">
-          BE A SOCIAL VENTURIST
-        </div>
-        <div className="text-xl tracking-widest uppercase border py-8 lg:px-16 xl:px-48 hover:bg-gray-800 cursor-pointer ease-in-out duration-300">
-          GALLERY
-        </div>
+        <Link to="paintingstyles">
+          <div className="text-xl tracking-widest uppercase border py-8 lg:px-16 xl:px-48 hover:bg-gray-800 cursor-pointer ease-in-out duration-300 ">
+            PAINTING STYLES
+          </div>
+        </Link>
+        <Link to="venturist">
+          <div className="text-xl tracking-widest uppercase border py-8 lg:px-16 xl:px-48 hover:bg-gray-800 cursor-pointer ease-in-out duration-300">
+            BE A SOCIAL VENTURIST
+          </div>
+        </Link>
+        <Link to="gallery">
+          <div className="text-xl tracking-widest uppercase border py-8 lg:px-16 xl:px-48 hover:bg-gray-800 cursor-pointer ease-in-out duration-300">
+            GALLERY
+          </div>
+        </Link>
       </div>
     </div>
   );

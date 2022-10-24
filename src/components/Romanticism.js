@@ -84,12 +84,12 @@ function Romanticism() {
         }}
       >
         <div className="bg-white">
-          <img src={tempImg} alt="" className="drop-shadow-sm p-4" />
+          <img src={tempImg} alt="" className="drop-shadow-sm p-4 max-w-sm" />
         </div>
-        <div>
+        <div className="max-w-xs">
           <h1 className="text-white md:text-3xl">{title}</h1>
           <h2 className="text-white text-sm mt-2 trackin-wider">
-            Author: {''} {author}
+            Artist: {''} {author}
           </h2>
         </div>
       </div>

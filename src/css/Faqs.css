@@ -5,3 +5,22 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.box {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+
+.box-wrapper {
+  background: #efefbb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #d4d3dd,
+    #efefbb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #d4d3dd,
+    #efefbb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

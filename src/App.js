@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import { Routes, Route } from 'react-router-dom';
 import WhyArtmen from './components/WhyArtmen';
 import TopHeader from './components/TopHeader';
+import Gallery from './pages/Gallery';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <>
               <Header />
               <WhyArtmen />
+              <hr />
               <Footer />
             </>
           }
@@ -56,6 +58,15 @@ function App() {
             <>
               <TopHeader />
               <PaintingStyles />
+            </>
+          }
+        />
+        <Route
+          path="/gallery"
+          element={
+            <>
+              <TopHeader />
+              <Gallery />
             </>
           }
         />

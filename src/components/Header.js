@@ -8,22 +8,24 @@ function Header() {
   return (
     /* Top Header section ------------------------------------------------------------ */
     <div className="wrapper pt-8 sm:p-6">
-      {/* <div className="flex justify-between text-white pb-4">
-        <div className="w-64">
-          <img src={logo} alt="" />
-        </div>
-        <div>
-          <ul className="flex space-x-10">
-            <li>Home</li>
-            <li>Painting</li>
-            <li>Price</li>
-          </ul>
-        </div>
+      <div className="px-6">
+        <ul className="text-white flex justify-center text-xs space-x-2 items-center  md:space-x-24 md:justify-end md:text-md py-6">
+          <Link to="/paintingstyles">
+            <li className="hover:text-gray-300 tracking-widest">
+              PAINTING STYLES
+            </li>
+          </Link>
+          <Link to="venturist">
+            <li className="hover:text-gray-300 tracking-widest">
+              BE A SOCIAL VENTURIST
+            </li>
+          </Link>
+          <Link to="gallery">
+            <li className="hover:text-gray-300 tracking-widest">GALLERY</li>
+          </Link>
+        </ul>
       </div>
-      <hr /> */}
-      {/* Below Section */}
-
-      <div className="flex text-white items-center space-x-52">
+      <div className="flex text-white items-center space-x-52 pb-56">
         <div className="pt-48 flex space-x-6 items-center w-1/2 md:space-x-16">
           <div className="flex flex-col items-center">
             <div className="border-l-2 border-white h-36 "></div>
@@ -31,31 +33,16 @@ function Header() {
             <div className="border-l-2 border-white h-36 "></div>
           </div>
           <div className="">
-            <h1 className="text-7xl pb-10 md:text-8xl">ARTMEN</h1>
+            <h1 className="text-7xl pb-6 md:text-8xl -tracking-tighter artmen">
+              ARTMEN
+            </h1>
+            <p className="pb-4 tracking-widest">For Minds Who Innovate...</p>
             <button className="border py-4 px-8">See Gallery</button>
           </div>
         </div>
         <div class="circle">
           <img src={moon} alt="" />
         </div>
-      </div>
-      {/* Buttons section */}
-      <div className=" mt-20 flex flex-col py-36 text-center px-2 text-white lg:flex-row lg:justify-center">
-        <Link to="paintingstyles">
-          <div className="text-xl tracking-widest uppercase border py-8 lg:px-16 xl:px-48 hover:bg-gray-800 cursor-pointer ease-in-out duration-300 ">
-            PAINTING STYLES
-          </div>
-        </Link>
-        <Link to="venturist">
-          <div className="text-xl tracking-widest uppercase border py-8 lg:px-16 xl:px-48 hover:bg-gray-800 cursor-pointer ease-in-out duration-300">
-            BE A SOCIAL VENTURIST
-          </div>
-        </Link>
-        <Link to="gallery">
-          <div className="text-xl tracking-widest uppercase border py-8 lg:px-16 xl:px-48 hover:bg-gray-800 cursor-pointer ease-in-out duration-300">
-            GALLERY
-          </div>
-        </Link>
       </div>
     </div>
   );

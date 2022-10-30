@@ -36,30 +36,14 @@ function Neoclassicism() {
         'Cornelia, Mother of the Gracchi, Pointing to her Children as Her Treasures',
       author: 'Angelica Kauffman',
     },
-    {
-      id: 3,
-      img: Cupid,
-      Title: 'Psyche Revived by Cupids Kiss',
-      author: 'Antonio Canova',
-    },
-    {
-      id: 4,
-      img: Monticello,
-      Title: 'Monticello (1772-1809)',
-      author: 'Thomas Jefferson',
-    },
+
     {
       id: 5,
       img: Horaitai,
       Title: 'Oath of the Horatii',
       author: 'Jacques-Louis David',
     },
-    {
-      id: 6,
-      img: Pantheon,
-      Title: 'Le Panthéon',
-      author: 'Jacques-Germain Soufflot and Jean-Baptiste Rondelet',
-    },
+
     {
       id: 7,
       img: Wolfie,

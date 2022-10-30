@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 .wrapper {
   background-image: url('../images/background.jpg');
   background-color: #cccccc;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.services {
+  font-family: 'Rajdhani', sans-serif;
 }
 
 .circle {

@@ -24,7 +24,7 @@ function Venturist() {
     'Symbolism Art',
   ];
 
-  const Preferences = ['BASIC (5k)', 'Standard (10k)', 'Premium (15k)'];
+  const Preferences = ['Basic', 'Standard', 'Premium'];
 
   useEffect(() => {
     fetchCountries().then(({ data }) => {
@@ -43,6 +43,7 @@ function Venturist() {
     Address: '',
     Preference: '',
     Idea: '',
+    Price: '',
   };
   const [vacancy, setVacancy] = useState(initialState);
 
@@ -57,20 +58,51 @@ function Venturist() {
     Address,
     Preference,
     Idea,
+    Price,
   } = vacancy;
 
   const handleInputChange = (e) => {
     e.preventDefault();
     setVacancy({ ...vacancy, [e.target.name]: e.target.value });
     console.log(vacancy);
-    console.log(vacancy);
+  };
+
+  const handlePreferenceChange = (e) => {
+    e.preventDefault();
+    setVacancy({ ...vacancy, Preference: e.target.value });
+    // getPrice(e.target.value);
+  };
+
+  const Prices = () => {
+    if (vacancy.Preference == 'Basic') {
+      return <div>30$</div>;
+    } else if (vacancy.Preference == 'Standard') {
+      return <div>40$</div>;
+    } else if (vacancy.Preference == 'Premium') {
+      return <div>50$</div>;
+    }
+  };
+
+  const getPrice = (value) => {
+    if (value == 'Basic') {
+      setVacancy({ ...vacancy, Price: '20$' });
+    } else if (value == 'Standard') {
+      setVacancy({ ...vacancy, Price: '30$' });
+    } else if (value == 'Premium') {
+      setVacancy({ ...vacancy, Price: '40$' });
+    }
   };
 
   return (
     <div className="text-black" id="contact">
-      <h1 className="text-5xl text-center bg-gray-200 py-10 text-black">
-        Be a Social Venturist
-      </h1>
+      <div className="bg-gray-200 py-10 flex flex-col text-center space-y-4 px-2">
+        <h1 className="text-5xl text-black">Be a Social Venturist</h1>
+        <p>
+          Whether you're a longtime fan or making your first purchase, we do our
+          best to make your experience with us to be fun, fast and convenient.
+        </p>
+      </div>
+
       <div className="flex flex-col items-center md:flex-row  bg-black">
         <div className="w-full px-8 lg:w-1/2 bg-white pb-20">
           <h1 className="mt-8 text-2xl mb-10">Fill in the Form</h1>
@@ -228,7 +260,7 @@ function Venturist() {
             <div className="flex flex-col space-y-4">
               <label htmlFor="">You Preference</label>
               <Select
-                onChange={handleInputChange}
+                onChange={handlePreferenceChange}
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
                 sx={{
@@ -247,6 +279,10 @@ function Venturist() {
                 })}
               </Select>
             </div>
+            {/* Price */}
+            <label htmlFor="" className="">
+              {Prices()}
+            </label>
             {/* Idea */}
             <div className="flex flex-col space-y-4">
               <label htmlFor="">
@@ -264,6 +300,11 @@ function Venturist() {
                 name="Idea"
                 onChange={handleInputChange}
               />
+            </div>
+            <div className="pt-4">
+              <button className="bg-black text-white py-2 px-6 rounded-full hover:bg-gray-800">
+                Submit
+              </button>
             </div>
           </div>
         </div>
